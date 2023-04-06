@@ -52,8 +52,9 @@ jobs:
           cd $CONFIG_REPO_NAME
           echo "checkout main branch"
           git checkout main
-          echo "updating image tag in values file"
+          echo "=== updating image tag in values file ===="
           sed -i "s,tag:.*,tag:\ ${{ github.sha }}," helm/webapp/values.yaml
+          echo "=== git add and commit update image tag ===="
           git add . && git commit -m "update image tag"
           git push
 
