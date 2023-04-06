@@ -1,7 +1,7 @@
 name: ci
 
 env:
-  CONFIG_REPO_NAME: aargocd-course-webapp-config-mabusaa
+  CONFIG_REPO_NAME: argocd-course-webapp-config-mabusaa
   
 on:
   push:
