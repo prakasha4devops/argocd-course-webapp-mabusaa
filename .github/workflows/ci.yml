@@ -58,7 +58,7 @@ jobs:
           git add . && git commit -m "update image tag"
           echo "=== git push code ===="
           git push
-
+          echo "=== git push completed ===="
 
 #name: CI with GitOps
 #
