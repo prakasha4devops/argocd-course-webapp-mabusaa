@@ -60,7 +60,6 @@ jobs:
     steps:
       - run: |
           echo "=== Promoting into dev environment! ==="
-         # git config --global user.email ci-bot@argocd.com && git config --global user.name ci-bot
           git config user.name github-actions
           git config user.email github-actions@github.com
           echo "=== Cloning config repo $CONFIG_REPO_NAME ==="
